@@ -1,3 +1,6 @@
+"""entry file in my project
+
+"""
 import os
 
 def long_fun1_name(
@@ -32,6 +35,24 @@ class Car(object):
         else:
             print("Refused")
 
+    @classmethod
+    def classMethod(cls, ccc):
+        print("This is a class method", ccc)
+
+    @staticmethod
+    def staticMethod():
+        print("This is a static method")
+
+class DefaultParameter():
+
+
+    def mult(f1, f2=0.0):
+        r = f1 * f2
+        return r
+
+
+
+
 if '__name__==__main__':
 
     long_fun1_name("kkk", 23)
@@ -43,3 +64,5 @@ if '__name__==__main__':
     c.start()
     c.stop()
     c.judge()
+    c.classMethod(123)
+    c.staticMethod()
