@@ -17,17 +17,17 @@ class Car(object):
 
 
     def __init__(self, arg):
-        super(, self).__init__()
+        #super(, self).__init__()
         self.arg = arg
 
-    def start()：
+    def start(self):
         print("Car is starting")
 
-    def stop():
+    def stop(self):
         print("Car is stopping")
 
-    def judge():
-        if x == 4:
+    def judge(self):
+        if self.arg == "new Car":
             print("Ok")
         else:
             print("Refused")
@@ -39,4 +39,7 @@ if '__name__==__main__':
     dic['first'] = my_list[1]
     print(dic['first'])
 
-    
+    c = Car("new Car")
+    c.start()
+    c.stop()
+    c.judge()
